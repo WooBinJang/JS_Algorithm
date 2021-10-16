@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            //가장 긴 문자열
+            function solution(s){  
+                let answer = "";
+                for(let x of s){
+                    if(answer.length < x.length){
+                        answer = x;
+                    }
+                }
+                return answer;
+            }
+            let str=["teacher", "time", "student", "beautiful", "good"];
+            console.log(solution(str));
+        </script>
+    </body>
+</html>

@@ -1,7 +1,17 @@
 //연속 부분수열 1
 function solution(m, arr) {
-  let answer = 0,
-   
+  let answer = 0;
+  let lt = 0;
+  let rt = 0;
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[rt++];
+    if (sum === m) answer++;
+    while (sum >= m) {
+      sum -= arr[lt++];
+      if (sum === m) answer++;
+    }
+  }
   return answer;
 }
 

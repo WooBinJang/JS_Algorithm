@@ -9,7 +9,6 @@ function solution(arr) {
       }
       idx++;
     }
-    console.log(arr);
   }
 
   return answer;

@@ -1,6 +1,6 @@
 // 이분검색
 function solution(target, arr) {
-  let answer;
+  let answer = 0;
 
   return answer;
 }

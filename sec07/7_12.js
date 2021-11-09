@@ -28,6 +28,6 @@ function solution(c, stable) {
   }
   return answer;
 }
-
+// 1 2 4 8 9
 let arr = [1, 2, 8, 4, 9];
 console.log(solution(3, arr));

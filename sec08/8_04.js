@@ -11,7 +11,7 @@ function solution(n) {
       }
       if (tmp.length > 0) {
         // 공집합 제거
-        answer.push(tmp.trim());
+        answer.push(tmp.trim()); // " " 제거
       }
     } else {
       ch[v] = true; // 포함한다

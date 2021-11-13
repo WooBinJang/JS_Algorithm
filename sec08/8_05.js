@@ -1,6 +1,12 @@
 // 합이 같은 부분집합(DFS : 아마존 인터뷰)
 function solution(arr) {
   let answer = "";
+  function DFS(v) {
+    if (v === 0) {
+    } else {
+    }
+  }
+  DFS(arr);
   return answer;
 }
 

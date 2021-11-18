@@ -1,7 +1,8 @@
 // 순열 구하기
 function solution(m, arr) {
   let answer = [];
-
+  function DFS(L) {}
+  DFS(0);
   return answer;
 }
 

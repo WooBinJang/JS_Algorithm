@@ -4,8 +4,8 @@ function solution(n, f) {
   let flag = 0;
   let dy = Array.from(Array(11), () => Array(11).fill(0)); // 메모이제이션
   let ch = Array.from({ length: n + 1 }, () => 0); // 체크 배열
-  let p = Array.from({ length: n }, () => 0); //
-  let b = Array.from({ length: n }, () => 0); //
+  let p = Array.from({ length: n }, () => 0); // 1 , 2 , 3 , 4
+  let b = Array.from({ length: n }, () => 0); // n-1C0 , n-1C1 ... 조합
 
   function Combi(n, r) {
     if (dy[n][r] > 0) return dy[n][r];

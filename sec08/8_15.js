@@ -1,7 +1,26 @@
 // 수들의 조합
 function solution(n, k, arr, m) {
   let answer = 0;
+  let tmp = Array.from({ length: k }, () => 0);
+  function DFS(L, s) {
+    if (L === k) {
+      let sum = 0;
+      for (let x of tmp) {
+        sum += x;
+      }
 
+      if (sum % m === 0) {
+        console.log(tmp);
+        answer++;
+      }
+    } else {
+      for (let i = s; i < arr.length; i++) {
+        tmp[L] = arr[i];
+        DFS(L + 1, i + 1);
+      }
+    }
+  }
+  DFS(0, 0);
   return answer;
 }
 

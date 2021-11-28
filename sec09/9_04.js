@@ -1,7 +1,9 @@
 // 미로탐색(DFS)
 function solution(board) {
   let answer = 0;
+  function DFS(v) {}
 
+  DFS(0);
   return answer;
 }
 

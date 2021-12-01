@@ -1,7 +1,7 @@
 // 이진트리 넓이우선탐색(BFS)
 function solution(s, e) {
   let answer = 0;
-
+  function BFS() {}
   return answer;
 }
 

@@ -6,12 +6,12 @@ function solution(arr) {
   for (let i = 1; i < arr.length; i++) {
     let max = 0;
     for (let j = i - 1; j >= 0; j--) {
+      console.log(arr[j] + " " + arr[i]);
       if (arr[j] < arr[i] && dy[j] > max) {
         max = dy[j];
       }
     }
     dy[i] = max + 1;
-    console.log(dy);
     answer = Math.max(answer, dy[i]);
   }
   return answer;

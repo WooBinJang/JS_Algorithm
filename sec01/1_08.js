@@ -1,4 +1,4 @@
-//일곱 난쟁이
+//일곱 난쟁이 (다시풀기)
 function solution(arr) {
   let sum = -100;
   for (let x of arr) {
